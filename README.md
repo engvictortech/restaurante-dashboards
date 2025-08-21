@@ -1,29 +1,85 @@
 **🍽️ Dashboards para Restaurante — Google Sheets + MS SQL + Power BI**
 
-Projeto de análise ponta a ponta integrando:
+***Projeto de análise ponta a ponta integrando:***
 
-Google Sheets como fonte operacional (relatorio_dashboard_restaurante.xlsx);
+🧾 Google Sheets como fonte operacional (relatorio_dashboard_restaurante.xlsx)
 
-MS SQL Server para armazenamento, modelagem e consultas;
+🗄️ MS SQL Server para armazenamento/modelagem
 
-Power BI para visualização e KPIs gerenciais.
+📊 Power BI para KPIs e visualizações
 
-**🎯 Objetivo***
+Repositório: ***restaurante-dashboards*** – **by Victor Hugo Miranda Crispim**
 
-Construir um fluxo reprodutível de dados para responder perguntas-chave do negócio:
+**🎯 Objetivos do Projeto**
 
-Como evoluíram as vendas mensais?
+Acompanhar vendas mensais e crescimento 📈
 
-Quais são os produtos/categorias mais rentáveis?
+Identificar produtos/categorias campeãs 🏆
 
-Quem são os top clientes?
+Medir ticket médio e margem 💵
 
-Qual o ticket médio e a margem por período?
+Monitorar status dos pedidos (Concluído x Em Preparo) 🧑‍🍳
 
-**🧱 Arquitetura (Sheets → SQL → Power BI)**
+Google Sheets (.xlsx/.csv)
+        ↓
+SQL Server (staging → dimensões/fatos → views analíticas)
+        ↓
+Power BI (modelo, DAX, visuais, publicação)
 
-Google Sheets: registro e cálculos básicos.
+**📂 Estrutura do Repositório**
 
-MS SQL Server: staging, limpeza, dimensões e fatos.
+restaurante-dashboards/
+restaurante-dashboards/
+├── data/
+│  └── relatorio_dashboard_restaurante.xlsx
+│   
+├── sql/
+│   ├── modelo_restaurante.sql
+│   └── consultas_analise.sql 
+├── powerbi/
+│   ├── dashboards_restaurante.pbix
+│   └── images/
+│       └── grafico.png    # gráfico 
+└── docs/
 
-Power BI: conexão direta ao SQL, medidas DAX e dashboards.
+**🖼️ Dashboard Power BI**
+**📊 Analise Geral**
+
+
+![📊 Analise Geral](powerbi/images/grafico.png)
+
+
+
+
+**⚙️ Como Reproduzir**
+
+Exportar Google Sheets para data/relatorio_dashboard_restaurante.xlsx
+
+Executar sql/modelo_restaurante.sql no SQL Server
+
+(Opcional) Rodar data/script_import.sql para carregar dados em lote
+
+Abrir powerbi/dashboards_restaurante.pbix e apontar a conexão para seu SQL Server
+
+Atualizar medidas DAX e visuais conforme necessidade
+
+**✅ Requisitos**
+
+MySQL, SQL Server 2019+ ou Azure SQL 🗄️
+
+Power BI Desktop 🟡
+
+Google Sheets 🧾
+
+**👤 Autor**
+
+***Victor Hugo Miranda Crispim***
+GitHub: https://github.com/engvictortech
+
+
+   
+
+
+    
+
+
