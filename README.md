@@ -1,4 +1,4 @@
-🍽️ Dashboards para Restaurante — Google Sheets + MS SQL + Power BI
+**🍽️ Dashboards para Restaurante — Google Sheets + MS SQL + Power BI**
 
 Projeto de análise ponta a ponta integrando:
 
@@ -8,7 +8,7 @@ MS SQL Server para armazenamento, modelagem e consultas;
 
 Power BI para visualização e KPIs gerenciais.
 
-🎯 Objetivo
+**🎯 Objetivo***
 
 Construir um fluxo reprodutível de dados para responder perguntas-chave do negócio:
 
@@ -20,7 +20,7 @@ Quem são os top clientes?
 
 Qual o ticket médio e a margem por período?
 
-🧱 Arquitetura (Sheets → SQL → Power BI)
+**🧱 Arquitetura (Sheets → SQL → Power BI)**
 
 Google Sheets: registro e cálculos básicos.
 
