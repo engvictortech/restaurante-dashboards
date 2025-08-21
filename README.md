@@ -45,7 +45,9 @@ restaurante-dashboards/
 **🖼️ Dashboard Power BI**
 **📊 Analise Geral**
 
-[📊 Analise Geral](powerbi/images/grafico.png)
+
+![📊 Analise Geral](powerbi/images/grafico.png)
+
 
 
 
